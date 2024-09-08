@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,33 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <canvas></canvas>
     <input type="range" id="line-width" min="1" max="20" value="5">
+    <input type="color" id="color">
+
+    <div>
+        <div style="background-color: #1abc9c;" data-color="#1abc9c" class="color-options"></div>
+        <div style="background-color: #3498db;" data-color="#3498db" class="color-options"></div>
+        <div style="background-color: #34495e;" data-color="#34495e" class="color-options"></div>
+        <div style="background-color: #27ae60;" data-color="#27ae60" class="color-options"></div>
+        <div style="background-color: #8e44ad;" data-color="#8e44ad" class="color-options"></div>
+        <div style="background-color: #f1c40f;" data-color="#f1c40f" class="color-options"></div>
+        <div style="background-color: #e74c3c;" data-color="#e74c3c" class="color-options"></div>
+        <div style="background-color: #95a5a6;" data-color="#95a5a6" class="color-options"></div>
+        <div style="background-color: #d35400;" data-color="#d35400" class="color-options"></div>
+        <div style="background-color: #bdc3c7;" data-color="#bdc3c7" class="color-options"></div>
+        <div style="background-color: #2ecc71;" data-color="#2ecc71" class="color-options"></div>
+        <div style="background-color: #e67e22;" data-color="#e67e22" class="color-options"></div>
+    </div>
+
+    <button id="fillBtn">Fill</button>
+    <button id="eraserBtn">Eraser</button>
+    <button id="cleanAll">Clean All</button>
+
 
     <script src="app.js"></script>
 </body>
+
 </html>
